@@ -81,7 +81,15 @@ function generatePassword(len,initialPassword){
                 pass+=initialPassword.charAt(Math.floor(Math.random()*initialPassword.length));
             }
         }else if (initialPassword.length==76) { //uCase+lCase+number+symbols
-
+            if (i==len-4) {
+                pass+=symbol.charAt(Math.floor(Math.random()*symbol.length));
+                pass+=uCase.charAt(Math.floor(Math.random()*uCase.length));
+                pass+=number.charAt(Math.floor(Math.random()*number.length));
+                pass+=number.charAt(Math.floor(Math.random()*lCase.length));
+                i+=4;
+            }else{
+                pass+=initialPassword.charAt(Math.floor(Math.random()*initialPassword.length));
+            }
         }else if (initialPassword.length==37) { //lCase+number
             if (i==len-2) {
                 pass+=number.charAt(Math.floor(Math.random()*number.length));

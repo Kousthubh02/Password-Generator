@@ -19,7 +19,15 @@ body{
 
 }
 header{
+    position: absolute;
+    top:10%;
+    left: 8%;
     color: #fff;
+}
+header h1{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 10px;
 }
 .container{
     position: absolute;
@@ -41,6 +49,20 @@ h1{
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 30px;
+}
+.pComment{
+    color: #fff;
+    margin: 10px 0 0 0 ;
+}
+.bar{
+    position: relative;
+    height: 5%;
+    width: 18%;
+    background: red;
+    line-height: .3rem;
+    color: red;
+    font-size: .2rem;
+    margin-top: -15px;
 }
 .form-control{
     display: flex;
@@ -74,8 +96,12 @@ h1{
     background-color: #eee;
     outline: none;
     border: none;
-    border-radius: 3px 0 0 0 ;
+    border-radius: 3px ;
+    width: 15%;
 
+}
+.form-control input[type=number]{
+    margin-top: -28px;
 }
 .p-header button{
     position: absolute;
@@ -106,4 +132,8 @@ h1{
 }
 #submit:active{
     background-color: #3282b8;
+}
+.hide{
+    background: #222;
+    color: #222;
 }

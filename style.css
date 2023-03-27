@@ -9,7 +9,7 @@
 body{
     font-family: monospace;
     /* background: linear-gradient(to right bottom ,#ea2c2e ,#52057b)no-repeat; */
-    background-image: url(pexels-sebastiaan-stam-1097456.jpg);
+    background-image: url(pexels-pixabay-355887.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -29,16 +29,21 @@ header h1{
     font-weight: 900;
     margin: 10px;
 }
+.all{
+    background: linear-gradient(to bottom, rgba(244, 233, 233, 0.03), rgb(255, 255, 255));
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
 .container{
     position: absolute;
     top: 50%;
     left: 60%;
     transform: translate(-20%, -40%);
-    background: #222;
+    background: #fff;
     opacity: 0.9;
-    padding: 20px;
     border-radius: 20px;
-    width: 350px;
+    width: 700px;
     height: 400px;
     
 }
@@ -50,28 +55,17 @@ h1{
     font-weight: 700;
     font-size: 30px;
 }
-.pComment{
-    color: #fff;
-    margin: 10px 0 0 0 ;
-}
-.bar{
-    position: relative;
-    height: 5%;
-    width: 18%;
-    background: red;
-    line-height: .3rem;
-    color: red;
-    font-size: .2rem;
-    margin-top: -15px;
-}
 .form-control{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    color: #fff;
-    border-bottom: 1px solid #eee;
+    color: #000;
+    border-bottom: 1px solid #000;
 
+}
+.p-body{
+ padding: 20px;
 }
 .form-control label{
     cursor: pointer;
@@ -81,35 +75,31 @@ h1{
 }
 .p-header input{
     width: 100%;
-    height: 100%;
-    background-color: #0b0b0b;
+    line-height: 60px;
+    background-color: #339933;
     padding: 14px;
     border-radius: 3px;
     color: #fff;
     border: none;
-    font-size: 16px;
+    font-size: 32px;
     font-weight:500;
 
 }
 .p-header button,.form-control input[type=number]{
     padding: 3px 5px;
-    background-color: #eee;
+    background-color: #fDD572;
+    color: #000;
     outline: none;
     border: none;
     border-radius: 3px ;
     width: 15%;
 
 }
-.form-control input[type=number]{
-    margin-top: -28px;
-}
 .p-header button{
     position: absolute;
     bottom: 0;
     right: 0;
     cursor: pointer;
-
-
 }
 #submit{
     width:100%;
@@ -132,8 +122,4 @@ h1{
 }
 #submit:active{
     background-color: #3282b8;
-}
-.hide{
-    background: #222;
-    color: #222;
 }

@@ -7,7 +7,7 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <div class="all">
         <header>
             <h1>Random Password Generator</h1>
@@ -20,9 +20,18 @@
             </div>
             <div class="p-body">
                 <div class="form-control">
-                    
-                    <label for="p-length"></label>
-                    <input type="range" id="p-length" value="12" min="9" max="30"><br>
+                    <p>Use the slider and adjust the length of your password.</p>
+                    <div class="range">
+                        <div class="slidervalue">
+                            <span>12</span>
+                        </div>
+                        <div class="field">
+                            <div class="value left">0</div>
+                            <label for="p-length"></label>
+                            <input type="range" id="p-length" value="12" min="0" max="30"><br>
+                            <div class="value right">30</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-control">
                     <input type="checkbox" checked id="p-uppercase">
@@ -30,17 +39,17 @@
                     
                 </div>
                 <div class="form-control">
-                    <input type="checkbox" id="p-lowercase">
+                    <input type="checkbox" checked id="p-lowercase">
                     <label for="p-lowercase">Include Lowercase</label>
                     
                 </div>
                 <div class="form-control">
-                    <input type="checkbox" id="p-number">
+                    <input type="checkbox" checked id="p-number">
                     <label for="p-number">Include Numbers</label>
                     
                 </div>
                 <div class="form-control">
-                    <input type="checkbox" id="p-symbol">
+                    <input type="checkbox" checked id="p-symbol">
                     <label for="p-symbol">Include Symbols</label>
                    
                 </div>

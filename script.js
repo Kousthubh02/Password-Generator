@@ -13,6 +13,7 @@ const pSymbol=document.getElementById("p-symbol")
 const submit=document.getElementById("submit")
 const password=document.getElementById("password")
 
+
 submit.addEventListener("click",()=>{
     let initialPassword=empty;
     (Uppercase.checked)?initialPassword+=uCase:"";
@@ -137,6 +138,13 @@ function generatePassword(len,initialPassword){
 
 
 // copy to clipboard
+    let initialPassword=empty;
+    (Uppercase.checked)?initialPassword+=uCase:"";
+    (Lowercase.checked)?initialPassword+=lCase:"";
+    (pNumber.checked)?initialPassword+=number:"";
+    (pSymbol.checked)?initialPassword+=symbol:"";
+
+    password.value=generatePassword(pLength.value,initialPassword)
 
 const copy=document.getElementById("copy")
 copy.addEventListener("click",()=>{
@@ -149,3 +157,11 @@ copy.addEventListener("click",()=>{
         alert("password has been copied to clipboard")
     }
 })
+
+const slidevalue=document.querySelector("span");
+const inputSlider=document.querySelector(".field input");
+inputSlider.oninput = (()=>{
+    let value = inputSlider.value;
+    slidevalue.textContent = value;
+    slidevalue.style.left = ((value*200)/60) + "%";
+});

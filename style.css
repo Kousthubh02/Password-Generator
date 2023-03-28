@@ -7,8 +7,6 @@
 }
 
 body{
-    font-family: monospace;
-    /* background: linear-gradient(to right bottom ,#ea2c2e ,#52057b)no-repeat; */
     background-image: url(pexels-pixabay-355887.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -38,10 +36,9 @@ header h1{
 .container{
     position: absolute;
     top: 50%;
-    left: 60%;
-    transform: translate(-20%, -40%);
-    background: #fff;
-    opacity: 0.9;
+    left: 50%;
+    transform: translate(-30%, -40%);
+    background: linear-gradient(to bottom, rgba(244, 233, 233, 0.03), rgb(255, 255, 255));
     border-radius: 20px;
     width: 700px;
     height: 400px;
@@ -56,12 +53,12 @@ h1{
     font-size: 30px;
 }
 .form-control{
-    display: flex;
+    display: inline;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     color: #000;
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #000; */
 
 }
 .p-body{
@@ -72,18 +69,26 @@ h1{
 }
 .p-header{
     position: relative;
+    width: 120%;
+    transform: translate(-9%, 0);
+    outline: none;
+    padding: 0 10px 10px 10px 10px;
 }
 .p-header input{
     width: 100%;
-    line-height: 60px;
+    line-height: 80px;
     background-color: #339933;
     padding: 14px;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #fff;
-    border: none;
-    font-size: 32px;
+    font-size: 40px;
     font-weight:500;
+    outline: none;
 
+}
+.form-control{
+    position: relative;
+    padding:10px;
 }
 .p-header button,.form-control input[type=number]{
     padding: 3px 5px;
@@ -93,7 +98,6 @@ h1{
     border: none;
     border-radius: 3px ;
     width: 15%;
-
 }
 .p-header button{
     position: absolute;
@@ -105,7 +109,7 @@ h1{
     width:100%;
     margin-top:25px ;
     padding: 15px;
-    background-color:#3282b8 ;
+    background-color:#339933 ;
     font-size: 18px;
     font-weight: 700;
     outline:none;
@@ -118,8 +122,8 @@ h1{
 
 }
 #submit:hover{
-    background-color: #ea2c62;
+    background-color: #3282b8;
 }
 #submit:active{
-    background-color: #3282b8;
+    background-color:#339933 ;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="all">
+        <header>
+            <h1>Random Password Generator</h1>
+            <p>Create strong and secure passwords to keep your account safe online.</p>
+        </header>
+        <div class="container">
+            <div class="p-header">
+                <input type="text" id="password">
+                <button class="copy" id="copy">Copy</button>
+            </div>
+            <div class="p-body">
+                <div class="form-control">
+                    <p>Use the slider and adjust the length of your password.</p>
+                    <div class="range">
+                        <div class="slidervalue">
+                            <span>12</span>
+                        </div>
+                        <div class="field">
+                            <div class="value left">0</div>
+                            <label for="p-length"></label>
+                            <input type="range" id="p-length" value="12" min="0" max="30"><br>
+                            <div class="value right">30</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" checked id="p-uppercase">
+                    <label for="p-uppercase">Include Uppercase</label>
+                    
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" checked id="p-lowercase">
+                    <label for="p-lowercase">Include Lowercase</label>
+                    
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" checked id="p-number">
+                    <label for="p-number">Include Numbers</label>
+                    
+                </div>
+                <div class="form-control">
+                    <input type="checkbox" checked id="p-symbol">
+                    <label for="p-symbol">Include Symbols</label>
+                   
+                </div>
+                <button id="submit">Generate Password</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
